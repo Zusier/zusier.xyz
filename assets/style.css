@@ -37,15 +37,14 @@ body {
 .console-underscore {
     display: inline-block;
     position: relative;
-    top: -2.5%;
-    left: 2.5%;
+    right: 0.25em;
     max-width: 100%;
 }
 
 span#t1text {
     font-family: 'roboto_monoregular';
     position: relative;
-    right: -1em;
+    right: -0.5em;
     max-width: 100%;
     font-size: 95%;
 }
