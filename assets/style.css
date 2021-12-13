@@ -9,6 +9,8 @@ body {
     background: #111;
     color: white;
     font-family: 'roboto_monoregular';
+    max-width: 100%;
+    margin: auto;
 }
 
 .hidden {
@@ -17,58 +19,76 @@ body {
 
 .console-container {
     font-family: 'roboto_monoregular';
-    font-size: 6em;
+    font-size: 500%;
     text-align: center;
-    height: 200px;
-    width: 600px;
+    height: 2em;
+    width: 6em;
     display: block;
     position: relative;
     color: white;
-    top: 200px;
+    top: 2em;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
+    max-width: 100%;
 }
 
 .console-underscore {
     display: inline-block;
     position: relative;
-    top: -0.05em;
-    left: -33px;
+    top: -2.5%;
+    left: 2.5%;
+    max-width: 100%;
+}
+
+span#t1text {
+    font-family: 'roboto_monoregular';
+    position: relative;
+    right: -1em;
+    max-width: 100%;
+    font-size: 95%;
 }
 
 .header h1 {
     color: white;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 150%;
     display: inline-block;
     position: relative;
     top: -0.75em;
-    left: 20px;
+    left: 0.20em;
+    max-width: 100%;
 }
 
 .header-items {
     float: right;
-    padding-top: 10px;
+    padding-top: 0.1em;
+    max-width: 100%;
 }
 
 .header-items a {
-    font-size: 20px;
+    font-size: 125%;
     color: white;
-    margin-left: 45px;
-    margin-right: 45px;
+    margin-left: 0.45em;
+    margin-right: 0.45em;
     text-decoration: none!important;
+    max-width: 100%;
 }
 
 .nav-wrap {
     width: 100%;
 }
 
-span#t1text {
-    font-family: 'roboto_monoregular';
-    position: relative;
-    right: -45px;
+#about {
+    background: #111;
+    color: #673ab7;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    max-width: 100%;
+    font-size: 100%;
+    margin: auto;
 }
 
 body>t1>div>descriptiont {
@@ -77,11 +97,12 @@ body>t1>div>descriptiont {
     display: block;
     position: relative;
     color: white;
-    top: -10;
+    top: -0.1em;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
+    max-width: 100%;
 }
 
 body>t2>div {
@@ -96,6 +117,8 @@ body>t2>div {
     margin-left: 25em;
     margin-right: 25em;
     font-size: large;
+    max-width: 100%;
+    margin: auto;
 }
 
 body>t2>div>div>descriptiont {
@@ -105,7 +128,7 @@ body>t2>div>div>descriptiont {
     text-align: left;
     font-size: large;
     margin: auto;
-    max-width: 200px;
+    max-width: 100%;
     margin-right: auto;
     margin-left: auto;
     line-height: normal;
@@ -123,12 +146,15 @@ body>t2>div>div>descriptiont {
     margin-left: 25em;
     margin-right: 25em;
     font-size: larger;
+    max-width: 100%;
+    margin: auto;
 }
 
 #projects>div>div.project-image>img {
     display: inline-block;
     max-width: 90%;
     vertical-align: middle;
+    margin: auto;
 }
 
 #projects>div>div.center>a {
@@ -136,41 +162,48 @@ body>t2>div>div>descriptiont {
     background-color: #673ab7;
     color: white;
     vertical-align: middle;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 5px;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    border-radius: 0.05em;
     top: 100em;
+    max-width: 100%;
+    margin: auto;
 }
 
 #projects>div>div.about-project>p {
     color: white;
+    margin: auto;
 }
 
 #contact>div>div.contact-items {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
 }
 
 #contact>div>div.contact-items>div {
-    margin-right: 20px;
+    margin-right: 0.2em;
+    margin: auto;
 }
 
 #contact>div>div.contact-items>div>div.contact-item-icon {
     background-color: #673ab7;
     color: white;
-    padding: 5px;
+    padding: 0.05em;
     align-items: center;
     display: block;
     position: relative;
+    margin: auto;
 }
 
 #contact>div>div.contact-items>div>div.contact-item-icon>img {
     display: inline-block;
     vertical-align: middle;
-    max-width: 20px;
+    max-width: 0.2em;
+    margin: auto;
 }
 
 #contact {
@@ -182,6 +215,13 @@ body>t2>div>div>descriptiont {
     left: 0;
     right: 0;
     font-size: larger;
+    margin: auto;
+}
+
+#contact>div>div.contact-items>div>div.contact-item-icon>p {
+    display: inline-block;
+    vertical-align: middle;
+    margin: auto;
 }
 
 #projects>t5>p {
@@ -190,8 +230,16 @@ body>t2>div>div>descriptiont {
     text-align: center;
     top: 50em;
     position: relative;
+    margin: auto;
 }
 
 #contact>div>div.contact-items>div>div.contact-item-text {
     color: white;
+    margin: auto;
+}
+
+#contact>div>div.contact-items>div>div.contact-item-text>p {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin: auto;
 }
