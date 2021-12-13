@@ -62,8 +62,10 @@ span#t1text {
 
 .header-items {
     float: right;
-    padding-top: 0.1em;
+    padding-top: 1em;
     max-width: 100%;
+    font-size: 125%;
+    padding-right: 2em;
 }
 
 .header-items a {
@@ -196,13 +198,7 @@ body>t2>div>div>descriptiont {
     display: block;
     position: relative;
     margin: auto;
-}
-
-#contact>div>div.contact-items>div>div.contact-item-icon>img {
-    display: inline-block;
-    vertical-align: middle;
-    max-width: 0.2em;
-    margin: auto;
+    width: auto;
 }
 
 #contact {
@@ -241,4 +237,12 @@ body>t2>div>div>descriptiont {
     padding-left: 0.5em;
     padding-right: 0.5em;
     margin: auto;
+    color: white;
+}
+
+#contact>div>div.contact-items>div>div.contact-item-text>a {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin: auto;
+    color: white;
 }
