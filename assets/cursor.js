@@ -7,33 +7,31 @@ function consoleText(word, id, color) {
     var letterCount = 1;
     var x = 1;
     var waiting = false;
-    var target = document.getElementById(id)
-    target.setAttribute('style', 'color:' + color)
+    var target = document.getElementById(id);
+    target.setAttribute('style', 'color:' + color);
     window.setInterval(function() {
 
         if (letterCount === 0 && waiting === false) {
             waiting = true;
-            target.innerHTML = word.substring(0, letterCount)
+            target.innerHTML = word.substring(0, letterCount);
             window.setTimeout(function() {
                 x = 1;
-                target.setAttribute('style', 'color:' + color)
+                target.setAttribute('style', 'color:' + color);
                 letterCount += x;
                 waiting = false;
-            }, 1000)
+            }, 1000);
         } else if (waiting === false) {
-            target.innerHTML = word.substring(0, letterCount)
+            target.innerHTML = word.substring(0, letterCount);
             letterCount += x;
         }
-    }, 160)
+    }, 160);
     window.setInterval(function() {
         if (visible === true) {
-            con.className = 'console-underscore hidden'
+            con.className = 'consoleunderscore hidden';
             visible = false;
-
         } else {
-            con.className = 'console-underscore'
-
+            con.className = 'consoleunderscore';
             visible = true;
         }
-    }, 400)
+    }, 400);
 }

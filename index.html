@@ -24,9 +24,11 @@
     </div>
     <t1>
         <div class='console-container'><span id='t1text'></span>
-            <script src="assets/cursor.min.js">
-                <div class='console-underscore' id='console'>&#95;</div>
+            <div class='consoleunderscore' id='console' style="display: none;">&#95;</div>
+            <script>
+                document.getElementById('console').style.display = 'inline';
             </script>
+            <script src="assets/cursor.js"></script>
             <noscript>
                 <t1text style="color: #673ab7">Zusier</t1text>
             </noscript>
@@ -40,7 +42,9 @@
                 <div class="about-title">
                     <h1>About Me</h1>
                 </div>
-                <descriptiont>I loved learning about how computers worked ever since I was young. Soon enough I learned the scripting language Batch, and got hooked on programming. Now I have expanded my experience on assorted softwares/languages, including: Go, Python,
+                <descriptiont>I loved learning about how computers worked ever since I was young. Soon enough I learned
+                    the scripting language Batch, and got hooked on programming. Now I have expanded my experience on
+                    assorted softwares/languages, including: Go, Python,
                     Batch, Docker, Linux and more!</descriptiont>
             </div>
         </div>
@@ -53,7 +57,8 @@
             <div class="project-container">
                 <div class="about-project" style="display: block;">
                     <h1 class="project-title">Atlas</h1>
-                    <p>An open and transparent modification of the Windows 10 operating system, designed to optimize performance and latency.</p>
+                    <p>An open and transparent modification of the Windows 10 operating system, designed to optimize
+                        performance and latency.</p>
                 </div>
                 <div class="project-image">
                     <img src="assets/images/atlas.webp" alt="Atlas">
