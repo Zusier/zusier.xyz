@@ -8,7 +8,6 @@ function consoleText(word, id, color) {
     var target = document.getElementById(id);
     target.setAttribute('style', 'color:' + color);
     window.setInterval(function() {
-
         if (letterCount === 0 && waiting === false) {
             waiting = true;
             target.innerHTML = word.substring(0, letterCount);
