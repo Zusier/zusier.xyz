@@ -42,6 +42,8 @@ body {
 }
 
 span#t1text {
+    width: -moz-fit-content;
+    width: fit-content;
     font-family: 'roboto_monoregular';
     position: relative;
     right: -0.5em;
@@ -123,13 +125,14 @@ body>t2>div {
 }
 
 body>t2>div>div>descriptiont {
-    display: inline;
+    width: fit-content;
+    max-width: 75%;
+    display: inline-block;
     color: white;
     position: relative;
-    text-align: left;
+    text-align: center;
     font-size: large;
     margin: auto;
-    max-width: 100%;
     margin-right: auto;
     margin-left: auto;
     line-height: normal;
@@ -147,7 +150,8 @@ body>t2>div>div>descriptiont {
     margin-left: 25em;
     margin-right: 25em;
     font-size: larger;
-    max-width: 100%;
+    max-width: 75%;
+    width: fit-content;
     margin: auto;
 }
 
@@ -211,6 +215,7 @@ body>t2>div>div>descriptiont {
     right: 0;
     font-size: larger;
     margin: auto;
+    max-width: 75%;
 }
 
 #contact>div>div.contact-items>div>div.contact-item-icon>p {
