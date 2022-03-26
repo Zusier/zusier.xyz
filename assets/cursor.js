@@ -1,3 +1,4 @@
+document.getElementById('console').style.display = 'inline'; // show if js is enabled
 consoleText('Zusier', 't1text', '#673ab7');
 
 function consoleText(word, id, color) {
