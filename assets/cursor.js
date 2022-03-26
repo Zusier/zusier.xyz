@@ -5,7 +5,6 @@ function consoleText(word, id, color) {
     var visible = true;
     var con = document.getElementById('console');
     var letterCount = 1;
-    var x = 1;
     var waiting = false;
     var target = document.getElementById(id);
     target.setAttribute('style', 'color:' + color);
@@ -15,14 +14,13 @@ function consoleText(word, id, color) {
             waiting = true;
             target.innerHTML = word.substring(0, letterCount);
             window.setTimeout(function() {
-                x = 1;
                 target.setAttribute('style', 'color:' + color);
-                letterCount += x;
+                letterCount += 1;
                 waiting = false;
             }, 1000);
         } else if (waiting === false) {
             target.innerHTML = word.substring(0, letterCount);
-            letterCount += x;
+            letterCount += 1;
         }
     }, 160);
     window.setInterval(function() {
