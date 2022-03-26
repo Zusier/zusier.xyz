@@ -1,7 +1,6 @@
 consoleText('Zusier', 't1text', '#673ab7');
 
 function consoleText(word, id, color) {
-    if (color === undefined) color = ['white'];
     var visible = true;
     var con = document.getElementById('console');
     var letterCount = 1;
