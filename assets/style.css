@@ -182,27 +182,11 @@ body>t2>div>description {
     margin: auto;
 }
 
-#contact>div>div.contact-items {
+.contact-items {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
-}
-
-#contact>div>div.contact-items>div {
-    margin-right: 0.2em;
-    margin: auto;
-}
-
-#contact>div>div.contact-items>div>div.contact-item-icon {
-    background-color: #673ab7;
-    color: white;
-    padding: 0.05em;
-    align-items: center;
-    display: block;
-    position: relative;
-    margin: auto;
-    width: auto;
 }
 
 #contact {
@@ -218,12 +202,6 @@ body>t2>div>description {
     max-width: 75%;
 }
 
-#contact>div>div.contact-items>div>div.contact-item-icon>p {
-    display: inline-block;
-    vertical-align: middle;
-    margin: auto;
-}
-
 .webmeme {
     color: white;
     font-size: xx-small;
@@ -233,21 +211,75 @@ body>t2>div>description {
     margin: auto;
 }
 
-#contact>div>div.contact-items>div>div.contact-item-text {
+#contact-email {
     color: white;
     margin: auto;
 }
 
-#contact>div>div.contact-items>div>div.contact-item-text>p {
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    margin: auto;
+#contact-email > p:nth-child(1) {
+    background-color: #673ab7;
     color: white;
+    padding: 0.05em;
+    align-items: center;
+    display: block;
+    position: relative;
+    margin: auto;
+    width: auto;
 }
 
-#contact>div>div.contact-items>div>div.contact-item-text>a {
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+#contact-email > p:nth-child(2) {
+    padding-top: 1em;
+    color: white !important;
     margin: auto;
+}
+
+#contact-git {
     color: white;
+    margin: auto;
+}
+
+#contact-git > p:nth-child(1) {
+    background-color: #673ab7;
+    color: white;
+    padding: 0.05em;
+    align-items: center;
+    display: block;
+    position: relative;
+    margin: auto;
+    width: auto;
+}
+
+a.contact-item-text {
+    display: block;
+    padding-top: 1em !important;
+    color: white !important;
+    margin: auto;
+}
+
+#contact-matrix {
+    color: white;
+    margin: auto;
+}
+
+#contact-matrix > p:nth-child(1) {
+    background-color: #673ab7;
+    color: white;
+    padding: 0.05em;
+    align-items: center;
+    display: block;
+    position: relative;
+    margin: auto;
+    width: auto;
+}
+
+#contact-matrix > p:nth-child(2) {
+    padding-top: 1em;
+    color: white !important;
+    margin: auto;
+}
+
+.contact-item {
+    display: inline-block;
+    vertical-align: middle;
+    margin: auto;
 }
