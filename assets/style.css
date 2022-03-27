@@ -41,7 +41,7 @@ body {
     max-width: 100%;
 }
 
-span#t1text {
+#t1text {
     width: -moz-fit-content;
     width: fit-content;
     font-family: 'roboto_monoregular';
@@ -173,13 +173,14 @@ body>t2>div>description {
     padding-bottom: 0.1em;
     border-radius: 0.05em;
     top: 100em;
-    max-width: 100%;
+    max-width: max-content;
     margin: auto;
 }
 
-#projects>div>div.about-project>p {
+.about-project>p {
     color: white;
     margin: auto;
+    width: fit-content;
 }
 
 .contact-items {
@@ -249,7 +250,7 @@ body>t2>div>description {
     width: auto;
 }
 
-a.contact-item-text {
+.contact-item-text {
     display: block;
     padding-top: 1em !important;
     color: white !important;
