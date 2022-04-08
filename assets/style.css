@@ -147,8 +147,6 @@ body>t2>div>description {
     bottom: 0;
     left: 0;
     right: 0;
-    margin-left: 25em;
-    margin-right: 25em;
     font-size: larger;
     max-width: 75%;
     width: fit-content;
@@ -194,7 +192,6 @@ body>t2>div>description {
     display: block;
     position: relative;
     color: #673ab7;
-    text-align: center;
     top: 10em;
     left: 0;
     right: 0;
@@ -225,7 +222,6 @@ body>t2>div>description {
     display: block;
     position: relative;
     margin: auto;
-    width: auto;
 }
 
 #contact-email > p:nth-child(2) {
@@ -247,14 +243,25 @@ body>t2>div>description {
     display: block;
     position: relative;
     margin: auto;
-    width: auto;
 }
 
 .contact-item-text {
     display: block;
     padding-top: 1em !important;
-    color: white !important;
+    color: white;
     margin: auto;
+    font-size: 55%;
+    text-align: center;
+    align-self: center;
+}
+
+.contact-item-icon {
+    display: block;
+    color: white;
+    margin: auto;
+    font-size: 90%;
+    text-align: center;
+    align-self: center;
 }
 
 #contact-matrix {
@@ -268,9 +275,7 @@ body>t2>div>description {
     padding: 0.05em;
     align-items: center;
     display: block;
-    position: relative;
     margin: auto;
-    width: auto;
 }
 
 #contact-matrix > p:nth-child(2) {
@@ -283,4 +288,5 @@ body>t2>div>description {
     display: inline-block;
     vertical-align: middle;
     margin: auto;
+    width: 25%;
 }
