@@ -18,31 +18,39 @@ body {
     opacity: 0;
 }
 
-.console-container {
-    font-family: 'roboto_monoregular';
-    font-size: 500%;
-    text-align: center;
-    height: 2em;
-    width: 6em;
-    display: block;
-    position: relative;
+.navbar {
+    background: #111;
     color: white;
-    top: 2em;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    max-width: 100%;
+    font-size: 1.5em;
+    padding: 0.5em;
+    position: relative;
+    width: 100%;
+}
+
+.navbar-links {
+    display: flex;
+    width: fit-content;
+    justify-content: space-between;
+    max-width: 500px;
+    float: right;
+    padding-right: 1em;
+    min-width: 333px;
+}
+
+.console-container {
+    display: block;
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 5em;
 }
 
 .consoleunderscore {
     position: relative;
-    left: 0.1em;
-    max-width: 100%;
     display: inline-block;
     animation: blinking 1s linear infinite;
+    font-size: 400%;
 }
-
 
 @keyframes blinking {
     0% { opacity: 1; }
@@ -52,12 +60,27 @@ body {
 }
 
 t1text {
-    width: -moz-fit-content;
-    width: fit-content;
-    font-family: 'roboto_monoregular';
+    display: inline;
+    max-width: 600px;
+    font-size: 500%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+descriptiont {
+    text-align: center;
+    font-size: small;
+    display: block;
     position: relative;
-    right: -0.25em;
-    font-size: 95%;
+    color: white;
+    margin-top: -1em;
 }
 
 .header h1 {
@@ -103,20 +126,6 @@ t1text {
     margin: auto;
 }
 
-body>t1>div>descriptiont {
-    text-align: center;
-    font-size: small;
-    display: block;
-    position: relative;
-    color: white;
-    top: -0.1em;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    max-width: 100%;
-}
-
 body>t2>div {
     display: block;
     position: relative;
@@ -130,7 +139,6 @@ body>t2>div {
     margin-right: 25em;
     font-size: large;
     max-width: 100%;
-    margin: auto;
 }
 
 body>t2>div>description {
@@ -226,4 +234,4 @@ body::before{ /* scanline effect, credits Cyuucat */
 @media only screen and (orientation: portrait){
     body::before{
         background-size: 100% 4px;}
-    }
+}
