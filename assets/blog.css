@@ -38,7 +38,6 @@ body {
     flex: 1;
 }
 .header__logo:after {
-    background: repeating-linear-gradient(90deg,#673ab7,#673ab7 2px,transparent 0,transparent 10px);
     content: "";
     display: block;
     right: 10px;
@@ -554,8 +553,6 @@ sup {
     width: 100%;
 }
 .post {
-    margin: 20px auto;
-    padding: 20px 0;
     text-align: left;
 }
 @media (max-width:900px) {
@@ -601,9 +598,7 @@ sup {
 .post-tags a {
     text-decoration: none;
 }
-.post-content {
-    margin-top: 30px;
-}
+
 .post-cover {
     background: transparent;
     border: 20px solid #673ab7;
