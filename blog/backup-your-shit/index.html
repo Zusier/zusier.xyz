@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Backup Your Shit! :: Zusier&#39;s Blog</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A Blog about backing up. Due to recent events." />
+<meta name="keywords" content=", " />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/backup-your-shit/" />
+
+
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="stylesheet" href="/assets/blue.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon" href="/img/apple-touch-icon-192x192.png">
+
+  <link rel="shortcut icon" href="/img/favicon/blue.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Backup Your Shit!">
+<meta property="og:description" content="A Blog about backing up. Due to recent events." />
+<meta property="og:url" content="/backup-your-shit/" />
+<meta property="og:site_name" content="Zusier&#39;s Blog" />
+
+  <meta property="og:image" content="/">
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2022-04-16 22:41:08 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="blue">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Zusier&#39;s Blog
+  </div>
+</a>
+
+    </div>
+    
+  </div>
+  
+  </header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/backup-your-shit/">Backup Your Shit!</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2022-04-16
+        
+      </span>
+    
+    
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/tags/backup/">backup</a>&nbsp;
+    
+    #<a href="/tags/datahoarding/">datahoarding</a>&nbsp;
+    
+  </span>
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="what-happened">What Happened?<a href="#what-happened" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>Long story short. A really bad misconfiguration.</p>
+<p>I recently migrated all of my drives to <a href="https://wiki.archlinux.org/title/ZFS">ZFS</a> due to it&rsquo;s mirroring, compression and native encryption. Once I set it all up, I rebooted and had some problems problems with the DKMS package for ZFS failing to load&hellip; after fixing (had to rebuild kernel) that my ZFS pool wasn&rsquo;t appearing.</p>
+<p>So I tried some things like <code>zpool import -a</code>, no luck.. <code>zpool import main</code>? Nope. Eventually I ran <code>zpool destroy main</code> (I know). At that point I had no other backups.</p>
+<h1 id="whatd-you-lose">What&rsquo;d you lose?<a href="#whatd-you-lose" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>It was only about 2TB of media, movies, TV and music. I could live without it and if I wanted anything back I all had to do is sail the seven seas. But at that point I thought, &ldquo;What if it was something more important?&rdquo; like family photos and financial documents? I knew I needed to make backups from now on.</p>
+<h1 id="what-are-you-doing-now">What are you doing now?<a href="#what-are-you-doing-now" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>I&rsquo;ve setup <a href="https://www.borgbackup.org/">Borg Backup</a> with the repo located on a separate drive and not in the ZFS pool. This is all I have for now until I setup an offsite solution aswell.</p>
+<h1 id="backup-software-and-resources">Backup Software and Resources<a href="#backup-software-and-resources" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<h2 id="backup-software">Backup Software<a href="#backup-software" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<ul>
+<li><a href="https://www.borgbackup.org/">Borg Backup</a> - Archival backup with deduplication, compression and incremental!</li>
+<li><a href="http://duplicity.nongnu.org/">Duplicity</a> - rsync based incremental/versioned backups</li>
+<li><a href="https://bup.github.io/">bup</a> - Git <a href="https://git-scm.com/book/en/v2/Git-Internals-Packfiles">Packfile</a> based backups, with deduplication and versioning</li>
+</ul>
+<h2 id="storage-providers">Storage Providers<a href="#storage-providers" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<ul>
+<li><a href="https://www.borgbase.com/">Borg Base</a> - Offsite Borg repo backup</li>
+<li><a href="https://www.storj.io/">Storj</a> - Cheap, Distributed storage</li>
+<li><a href="https://www.backblaze.com/cloud-backup.html">Backblaze</a> - Unlimited Backup for $6/Month</li>
+<li><a href="https://www.backblaze.com/b2/cloud-storage.html">B2</a> - Backblaze pay as you go</li>
+</ul>
+
+      </div></div>
+
+  
+
+  
+  
+
+  
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
