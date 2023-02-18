@@ -7,7 +7,6 @@
 }
 
 body {
-    background: #111;
     color: white;
     font-family: 'roboto_monoregular';
     max-width: 100%;
@@ -19,12 +18,10 @@ body {
 }
 
 .navbar {
-    background: #111;
     color: white;
     font-size: 1.5em;
     padding: 0.5em;
     position: relative;
-    width: 100%;
 }
 
 .navbar-links {
@@ -74,7 +71,7 @@ t1text {
     margin-top: 1em;
 }
 
-descriptiont {
+#bio {
     text-align: center;
     font-size: small;
     display: block;
@@ -116,7 +113,6 @@ descriptiont {
 }
 
 #about {
-    background: #111;
     color: #673ab7;
     padding: 0.5em;
     margin-top: 0.5em;
@@ -141,7 +137,7 @@ body>t2>div {
     max-width: 100%;
 }
 
-body>t2>div>description {
+body>t2>div>p {
     width: fit-content;
     max-width: 75%;
     display: inline-block;
@@ -177,11 +173,10 @@ body>t2>div>description {
     margin: auto;
 }
 
-#projects>div>div.center>a {
-    display: inline-block;
+.button {
+    display: block;
     background-color: #673ab7;
     color: white;
-    vertical-align: middle;
     padding-left: 0.2em;
     padding-right: 0.2em;
     padding-top: 0.1em;
@@ -190,15 +185,17 @@ body>t2>div>description {
     top: 100em;
     max-width: max-content;
     margin: auto;
+    margin-top: 0.5em;
 }
 
 .about-project>p {
     color: white;
     margin: auto;
+    margin-bottom: 0.5em;
     width: fit-content;
 }
 
-.webmeme {
+#disclaimer {
     color: white;
     font-size: xx-small;
     text-align: center;
