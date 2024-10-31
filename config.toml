@@ -1,0 +1,55 @@
+baseURL = "https://zusier.xyz/"
+title = "Zusier"
+languageCode = "en-us"
+#theme = "hello-friend-ng"
+
+[params]
+dateform = "Jan 2, 2006"
+dateformShort = "Jan 2"
+dateformNum = "2006-01-02"
+dateformNumTime = "2006-01-02 15:04"
+
+# Subtitle for home
+homeSubtitle = "Welcome to my site!"
+
+# Set disableReadOtherPosts to true in order to hide the links to other posts.
+disableReadOtherPosts = false
+
+# Enable sharing buttons, if you like
+enableSharingButtons = true
+
+# Show a global language switcher in the navigation bar
+enableGlobalLanguageMenu = false
+
+# Metadata mostly used in document's head
+description = "Welcome to my blog and site!"
+keywords = "homepage, blog"
+images = [""]
+
+# Font - Jetbrains Mono
+fontFamily = "JetBrains Mono"  # changes the font, default "JetBrains Mono"
+titleFontFamily = "JetBrains Mono"  # font used for titles and headings
+monospaceFontFamily = "JetBrains Mono"  # changes the monospace font for code, default "JetBrains Mono"
+
+
+[params.logo]
+logoText = "zusier.xyz"
+logoHomeLink = "/"
+
+# Social links
+[[params.social]]
+name = "github"
+url = "https://github.com/zusier"
+
+[[params.social]]
+name = "email"
+url = "mailto:zusier@pm.me"
+
+[permalinks]
+posts = "/blog/posts/:slug/"
+
+[[menu.main]]
+identifier = "blog"
+name = "Blog"
+url = "/blog"
+weight = 2
